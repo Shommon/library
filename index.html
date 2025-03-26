@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="library.js" defer></script>
+</head>
+<body>
+    <h1>Welcome to my Recipe Website!</h1>
+    <div class="recipe_container">
+        <div class="flex_row">
+            <div class ="recipe_box">
+                <span class="recipe_title">Recipe 1</span>
+                <p class="recipe_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class ="recipe_box"></div>
+            <div class ="recipe_box"></div>
+        </div>
+        <div class="flex_row">
+            <div class ="recipe_box"></div>
+            <div class ="recipe_box"></div>
+            <div class ="recipe_box"></div>
+        </div>
+        <div class="flex_row">
+            <div class ="recipe_box"></div>
+            <div class ="recipe_box"></div>
+            <div class ="recipe_box"></div>
+        </div>
+    </div>
+    <button class="add_recipe" onclick="openForm()">Add Recipe</button>
+
+    <div class="recipe_form" id="popupForm">
+        <form class="form_container">
+            <h2>Enter Title</h2>
+            <label for="title">Title</label>
+            <input type="text placeholder"="Enter Title" name="title" required>
+
+            <label for="description">Description</label>
+            <textarea name="description" placeholder="Your Description" required></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="button" class="cancel" onclick="closeForm()">Cancel</button>
+
+        </form>
+    </div>
+</body>
+</html>
